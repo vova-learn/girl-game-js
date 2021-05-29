@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
     <title>Girl Game JS</title>
 </head>
 <body>
-    
+    <link rel="stylesheet" href="./css/game.css">
+    <div class="game modal-open" id="game">
+        
+        <div class="game__container">
+            <canvas class="game__process" id="canvas"></canvas>
+            <div class="game__menu menu">
+                <div class="menu__slider slider">
+                    <button class="slider__prev-button menu__button" title="Слайдер назад" disabled></button>
+                    <button class="slider__add-slide menu__button" title="Добавить участника" disabled></button>
+                    <ul class="slider__container">
+                        <li class="slider__slide slider__slide--active">
+                            <img src="./img/menu/slider_user.png" title="Аватар участника">
+                        </li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide slider__slide--active"></li>
+                    </ul>
+                    <button class="slider__next-button menu__button" title="Слайдер вперед"></button>
+                </div>
+                <button class="menu__chat menu__button" title="Открыть чат" disabled></button>
+                <button class="menu__go menu__button" title="Кнопка 'Старт игры'">В УНИВЕР</button>
+                <button class="menu__message menu__button" title="Написать письмо" disabled></button>
+                <button class="menu__rating menu__button" title="Просмотреть рейтинг"></button>
+            </div>
+        </div>
+
+        <div class="game__modal modal">
+            <div class="modal__backdrop"></div>
+            <div class="modal__content game__modal--fade">
+                <div class="modal__background"></div>
+                <h4 class="modal__title">Рейтинг игроков</h4>
+                <button class="modal__close" title="Закрыть модальное окно"></button>
+                <div class="modal__score score">
+                    <div class="score__header">
+                        <p class="score__header-title">Место</p>
+                        <p class="score__header-title">Имя Фамилия</p>
+                        <p class="score__header-title">Опыт</p>
+                    </div>
+                    <ul class="score__list">
+                        <li class="score__item">
+                            <p class="score__title">1</p>
+                            <img src="./img/modal/score_item_separation.png" class="score__title-separation">
+                            <p class="score__title">Иван Иванов - друг</p>
+                            <p class="score__title">145</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
