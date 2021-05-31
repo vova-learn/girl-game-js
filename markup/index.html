@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl Game</title>
     <link rel="stylesheet" href="./css/global.css">
-    <title>Girl Game JS</title>
 </head>
 <body>
     <link rel="stylesheet" href="./css/game.css">
     <div class="game modal-open" id="game">
-        
         <div class="game__container">
             <canvas class="game__process" id="canvas"></canvas>
             <div class="game__menu menu">
@@ -18,22 +17,22 @@
                     <button class="slider__prev-button menu__button" title="Слайдер назад" disabled></button>
                     <button class="slider__add-slide menu__button" title="Добавить участника" disabled></button>
                     <ul class="slider__container">
-                        <li class="slider__slide slider__slide--active">
+                        <li class="slider__slide">
                             <img src="./img/menu/slider_user.png" title="Аватар участника">
                         </li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
-                        <li class="slider__slide slider__slide--active"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
+                        <li class="slider__slide"></li>
                     </ul>
                     <button class="slider__next-button menu__button" title="Слайдер вперед"></button>
                 </div>
                 <button class="menu__chat menu__button" title="Открыть чат" disabled></button>
-                <button class="menu__go menu__button" title="Кнопка 'Старт игры'">В УНИВЕР</button>
+                <button class="menu__go menu__button menu__go--disabled" title="В УНИВЕР">В УНИВЕР</button>
                 <button class="menu__message menu__button" title="Написать письмо" disabled></button>
                 <button class="menu__rating menu__button" title="Просмотреть рейтинг"></button>
             </div>
@@ -64,5 +63,13 @@
         </div>
 
     </div>
+    
+    <img class="visually-hidden" id="map" src="./img/game/game_map.png" width="980" height="630">
+    <img class="visually-hidden" id="label" src="./img/game/game_label.png" width="21" height="69">
+    <img class="visually-hidden" id="start" src="./img/game/game_point_start.png" width="13" height="23">
+    <img class="visually-hidden" id="point" src="./img/game/game_point_point.png" width="16" height="10">
+    <img class="visually-hidden" id="level" src="./img/game/game_point_level.png" width="20" height="14">
+    <img class="visually-hidden" id="finish" src="./img/game/game_point_finish.png" width="20" height="14">
+
 </body>
 </html>
