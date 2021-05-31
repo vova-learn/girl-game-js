@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
   "author": "Vladimir Pipko",
   "license": "ISC",
   "dependencies": {},
